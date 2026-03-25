@@ -21,7 +21,7 @@ class Member {
 	
 	// Method : 기능
 	void info() {
-		String fmt = " 이름: %s\n 아이디: %s\n 아이디: %s\n 연도: %d\n"; 		
+		String fmt = " 이름: %s\n 아이디: %s\n 이메일: %s\n 연도: %d\n"; 		
 		String msg = String.format(fmt, name, uid, email, regYear);
 		System.out.println(msg);
 	}
@@ -64,6 +64,7 @@ public class TextMember {
 		mList[0]	  = new Member("사나", "sana", "sana@hive.com", 2012);
 		mList[1]	  = new Member("정연", "jungy", "jungy@hive.com", 2011);
 		mList[2]	  = new Member("미나", "mina", "mina@hive.com", 2015);
+		
 		mList[0].info();
 		mList[1].info();
 		mList[2].info();
